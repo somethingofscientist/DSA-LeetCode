@@ -1,8 +1,8 @@
 console.log('hello map...')
 
-const res = [5, 1, 7, 3, 1,7, 9, 5, 4, 5, 1, 6];
+const res = [5, 1, 7, 3, 1, 7, 9, 5, 4, 5, 1, 6];
 
-function mapping(){
+function mapping() {
     let map = new Map();
     let result = [];
 
@@ -10,7 +10,7 @@ function mapping(){
         map.set(res[i], map.get(res[i]) + 1 || 1)
     }
 
-    for (let j of map ) {
+    for (let j of map) {
         if (j[1] > 1) {
             result.push(j[0])
         }
