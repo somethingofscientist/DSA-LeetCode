@@ -1,22 +1,21 @@
-console.log('hello map...')
+// Mapping 
 
-const res = [5, 1, 7, 3, 1, 7, 9, 5, 4, 5, 1, 6];
-
-function mapping() {
+function mapping(res) {
+    let result = []
     let map = new Map();
-    let result = [];
 
     for (let i = 0; i < res.length; i++) {
-        map.set(res[i], map.get(res[i]) + 1 || 1)
+        map.set(res[i], map.get(res[i]) + 1 || 1);
     }
+    console.log(map);
 
     for (let j of map) {
         if (j[1] > 1) {
             result.push(j[0])
         }
     }
-    return result;
-}
 
-// console.log(mapping(res));
-mapping(res);
+    console.log(result);
+}
+let res = [75, 75, 5, 5, 8, 86, 69, 2, 8966, 699, 6, 55558, 66, 66, 69, 996]
+mapping(res)
