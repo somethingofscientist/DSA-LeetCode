@@ -6,7 +6,9 @@ function factorial(num) {
     if (num == 0) return 1
     return num * factorial(num - 1)
 }
-console.log(factorial(num))
+for(let i=0; i<num; i++){
+    console.log(factorial(num))
+}
 
 
 // by simple loop
@@ -17,4 +19,4 @@ function fact(num) {
     }
     return res;
 }
-console.log(fact(5))
+// console.log(fact(5))
