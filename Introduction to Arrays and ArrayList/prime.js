@@ -8,4 +8,4 @@ function prime(x) {
     return 'yes prime number'
 }
 
-console.log(prime(1))
+console.log(prime(0))
