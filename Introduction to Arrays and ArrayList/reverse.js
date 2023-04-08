@@ -1,5 +1,5 @@
 
-let num = "sahill"
+let num = 4561468
 
 function rev(num) {
     let string = num.toString();

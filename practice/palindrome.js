@@ -16,7 +16,7 @@
 // }
 
 // console.log(pal(string));
-let x = "sahil"
+let x = "saas"
 let str = x.toString();
 let l = 0;
 let r = str.length - 1;
@@ -27,7 +27,9 @@ while(l < r){
         r--;
     }
     else{
+        console.log('no')
         return false;
     }
 }
+console.log('yes')
 return true;

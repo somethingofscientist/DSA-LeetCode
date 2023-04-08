@@ -2,7 +2,7 @@
 let res = [] // empty array
 
 function findTriplets(arr) {
-    for (let i = 0; i < arr.length - 2; i++) { 
+    for (let i = 0; i < arr.length - 2; i++) {
         let l = i + 1               // left
         let r = arr.length - 1      // right
         let x = arr[i]
