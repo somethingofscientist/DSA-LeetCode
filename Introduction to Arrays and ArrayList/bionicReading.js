@@ -1,13 +1,24 @@
-const sent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, corrupti blanditiis aperiam repudiandae ea perferendis eaque architecto ratione quaerat asperiores ut, est totam error ullam distinctio rem quidem cupiditate debitis!"
+let str = "khnj nkjfr nfjew"
 
-// function bionicReading(sent){
-//     for(let i=0; i<sent.length; i++){
-//         if(sent[0].toUpperCase())
-//     }
+const arr = str.split(" ");
+
+for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+
+}
+
+const str2 = arr.join(" ");
+console.log(str2);
+
+
+// function capRecursive(arr) {
+//     let res = []
+
+//     if (arr.length === 0) return []
+//     let s = arr[0][0].toUpperCase() + arr[0].slice(1)
+//     res.push(s)
+//     return res.concat(capRecursive(arr.slice(1)))
 // }
 
-const e = document.getElementById("edit"), r = document.getElementById("read");
-const u = () => r.innerHTML = e.innerHTML.split(" ").map(w => `<b>${w.split("").slice(0,Math.ceil(w.length/2)).join("")}</b>${w.split("").slice(Math.ceil(w.length / 2),w.length).join("")} `).join(" ");
-u();
-e.addEventListener("input", u);
-
+// let arr = ['sahil', 'anchal', 'niya']
+// console.log(capRecursive(arr))
